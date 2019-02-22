@@ -6,7 +6,7 @@ import CardOpen from "./CardOpen";
 export default class HogCard extends React.Component {
 
     state = {
-        hasBeenClicked: false,
+        hasBeenClicked: true,
         hasBeenHidden: null
     };
 
