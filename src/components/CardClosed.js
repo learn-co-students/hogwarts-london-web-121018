@@ -20,12 +20,12 @@ export default class CardClosed extends React.Component {
         return (
             <div className='ui four wide column'>
             <div className="ui card" onClick={this.props.handleClick}>
-                <div class="content">
-                    <img class="right floated mini ui image" src={image[this.imageName()]} />
-                    <div class="header">
-                        <h1>{hog.name}</h1>
+                <div className="content">
+                    <img className="right floated mini ui image" src={image[this.imageName()]} />
+                    <div className="header">
+                        <h3>{hog.name}</h3>
                     </div>
-                    <div class="meta">
+                    <div className="meta">
                         {hog.specialty}
                     </div>
                 </div>

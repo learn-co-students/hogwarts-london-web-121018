@@ -28,7 +28,8 @@ export default class CardOpen extends React.Component {
         // const hide = {display: `${this.state.hasBeenHidden}`}xs
 
         return (
-            <div className="ui three wide column card" >
+            <div className="ui four wide column" >
+            <div className='ui card'>
                 <div className="image" onClick={this.props.handleClick}>
                     <img src={image[this.imageName()]}/>
                 </div>
@@ -51,6 +52,7 @@ export default class CardOpen extends React.Component {
                         {hog['highest medal achieved']}
                     </span>
                 </div>
+            </div>
             </div>
         );
     };
