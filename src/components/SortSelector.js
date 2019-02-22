@@ -4,7 +4,7 @@ export default class SortSelector extends React.Component {
 
     render() {
         return (
-            <div>
+            <div style={{display:'inline', margin:'20px'}}>
                 <select onChange={(event) => this.props.handleSortSelector(event)}>
                     <option value=''> </option>
                     <option value='name'>Name</option>

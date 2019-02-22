@@ -35,8 +35,10 @@ class App extends Component {
     return (
       <div className="App">
           < Nav />
+          <div style={{margin: '20px'}}>
           < Filter handleFilterClick={this.handleFilterClick} hasBeenFiltered={this.state.filtered}/>
           < SortSelector handleSortSelector={this.handleSortSelector}/>
+          </div>
           < HogList hogs={this.state.hogs} changeGreasedState={this.changeGreasedState}  hasBeenFiltered={this.state.filtered} hasBeenSorted={this.state.sortType}/>
       </div>
     )

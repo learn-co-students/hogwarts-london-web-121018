@@ -31,7 +31,7 @@ export default class HogList extends React.Component {
         const renderHogs = this.filterGreasedHogs().map(hog => < HogCard changeGreasedState={this.props.changeGreasedState} hog={hog} key={hog.name}/>)
 
         return (
-            <div className='ui grid container'>
+            <div className='ui link cards grid'>
                 {renderHogs}
             </div>
         )
